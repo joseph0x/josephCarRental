@@ -1,0 +1,178 @@
+<section>
+  <div class="" id="jumbotron">
+    <div class="container-fluid">
+      <div class="pt-5">
+        <h1 class="display-5 fw-bold indigoWhite">
+          Empower your <span>travels</span> <br />choose our
+          <span> wheels.</span>
+        </h1>
+        <p class="col-md-8 fs-6 white">
+          Using a series of utilities, you can create this jumbotron, just like
+          the one in previous versions of Bootstrap.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container-fluid my-5" id="services">
+  <div class="text-center">
+    <h6 class="text-uppercase">check out our services.</h6>
+    <h2 class="">What We Do.</h2>
+  </div>
+  <div class="row g-0 border-0 my-5">
+    <div class="col-sm">
+      <div class="card border-0 text-center">
+        <div class="card-body">
+          <div>
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">
+              Card subtitle
+            </h6>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="card border-0 text-center">
+        <div class="card-body">
+          <div>
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">
+              Card subtitle
+            </h6>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="card border-0 text-center">
+        <div class="card-body">
+          <div>
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">
+              Card subtitle
+            </h6>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container-fluid g-0">
+  <div class="mb-4" id="jumbotronAd">
+    <div class="container-fluid py-3 mx-4">
+      <h1 class="fs-6 fw-bold">Plan Your Trip Now.</h1>
+      <div class="col-md-8 fs-4">
+        <h1 class="fw-bold indigoWhite">
+          Fast and Easy Way To <br />
+          <span class="orangeBellPepper">Rent A Car</span>
+        </h1>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container my-5" id="about">
+  <div class="row d-flex justify-content-center">
+    <div
+      class="col-sm-6 col-md-4 img img-2 rounded-3 g-1"
+      id="bgAbout"
+      style="background-image: url(assets/images/vacation.jpg)"
+    ></div>
+    <div class="col-sm-6 col-md-5">
+      <div class="my-3 align-item-center mx-5">
+        <span
+          class="text-uppercase"
+          style="letter-spacing: 1.25px; font-size: 13px"
+          >learn about us</span
+        >
+        <h2 class="my-2 fw-bold">Best Experience Of Traveling</h2>
+        <p style="font-size: 14px; letter-spacing: 1px">
+          On her way she met a copy. The copy warned the Little Blind Text, that
+          where it came from it would have been rewritten a thousand times and
+          everything that was left from its origin would be the word "and" and
+          the Little Blind Text should turn around and return to its own, safe
+          country. But nothing the copy said could convince her and so it didn’t
+          take long until a few insidious Copy Writers ambushed her, made her
+          drunk with Longe and Parole and dragged her into their agency, where
+          they abused her for their.
+        </p>
+        <p class="pt-3">
+          <a href="#" class="btn btn-md rounded-1 bgZodiac white"
+            >Search vehicle</a
+          >
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container-fluid my-5 g-0" id="carAmbassador">
+  <div class="container text-center">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+      <div class="col">
+        <img src="assets/images/bmw-sm.png" alt="audi logo" />
+      </div>
+      <div class="col">
+        <img src="assets/images/ford-lg.png" alt="ford logo" />
+      </div>
+      <div class="col">
+        <img src="assets/images/jeep-lg.png" alt="jeep logo" />
+      </div>
+      <div class="col">
+        <img src="assets/images/acura.png" alt="acura logo" />
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container-fluid" id="FAQs">
+  <div class="row">
+    <div class="col-sm-6 my-4" *ngFor="let FAQ of faq; let i = index">
+      <div class="accordion" [attr.id]="'accordionFAQ' + i">
+        <div class="accordion-item border-0">
+          <div
+            class="accordion-header shadow-none border-0 d-flex justify-content-between"
+            style="font-size: 17px"
+          >
+            <span class="">{{ FAQ.question }}</span>
+            <button
+              class="bg-transparent shadow-none border-0"
+              type="button"
+              [attr.data-bs-target]="'#collapse' + i"
+              [attr.aria-controls]="'collapse' + i"
+              (click)="toggleAccordion(i)"
+            >
+              <span
+                class="bi"
+                [ngClass]="{
+                  'bi-chevron-up': isAccordionOpen[i],
+                  'bi-chevron-down': !isAccordionOpen[i]
+                }"
+              ></span>
+            </button>
+          </div>
+          <div
+            [id]="'collapse' + i"
+            class="accordion-collapse collapse"
+            [ngClass]="{ show: isAccordionOpen[i] }"
+            [attr.data-bs-parent]="'#accordionFAQ' + i"
+          >
+            <div class="accordion-body">
+              <div>{{ FAQ.answer }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

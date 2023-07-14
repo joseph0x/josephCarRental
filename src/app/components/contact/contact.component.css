@@ -1,0 +1,60 @@
+@media screen and (max-width: 768px) {
+  section div #contactDetails {
+    max-width: 330px;
+  }
+}
+.bgAquaNation {
+  background-color: #0c747c;
+}
+.bgOrangeBell {
+  background-color: #fc8947;
+}
+.bgZodiac {
+  background-color: #f18546;
+}
+.bgAnotherWhite {
+  background-color: #f3f5f9;
+}
+.newWhite {
+  color: rgba(255, 255, 255, 0.8);
+}
+.white {
+  color: #ffffff;
+}
+.indigoWhite {
+  color: #ecf4f5;
+}
+.orangeBellPepper {
+  color: #fc8947;
+}
+.zodiacConstellation {
+  color: #f18546;
+}
+.bgZodiac {
+  background-color: #f18546;
+}
+.bgCoral {
+  background-color: #fcb48a;
+}
+.coralDusk {
+  color: #fcb48a;
+}
+.aquaNation {
+  color: #0c747c;
+}
+.waterhenBlack {
+  color: #2f4354;
+}
+.chuffBlue {
+  color: #94c4c3;
+}
+.caulerpa {
+  color: #579b9c;
+}
+.form-control:focus {
+  border-color: #f18546;
+  box-shadow: 0 0 0 0.2rem rgba(241, 133, 70, 0.25);
+}
+#contactUs {
+  margin: 6rem 0 6rem 0;
+}

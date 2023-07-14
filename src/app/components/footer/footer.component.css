@@ -1,0 +1,37 @@
+.white {
+  color: #ffffff;
+}
+.indigoWhite {
+  color: #ecf4f5;
+}
+.orangeBellPepper {
+  color: #fc8947;
+}
+.zodiacConstellation {
+  color: #f18546;
+}
+.bgZodiac {
+  background-color: #f18546;
+}
+.bgCoral {
+  background-color: #fcb48a;
+}
+.coralDusk {
+  color: #fcb48a;
+}
+.aquaNation {
+  color: #0c747c;
+}
+.waterhenBlack {
+  color: #2f4354;
+}
+.chuffBlue {
+  color: #94c4c3;
+}
+.caulerpa {
+  color: #579b9c;
+}
+footer {
+  /* background-color: rgba(0, 0, 0, 0.95); */
+  background-color: #0c747c;
+}

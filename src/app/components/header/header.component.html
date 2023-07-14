@@ -1,0 +1,57 @@
+<nav
+  class="navbar navbar-expand-lg sticky-top bg-transparent mb-5 pb-5 border-0"
+>
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/">
+      <img
+        src="assets/images/brandLogo1.png"
+        alt="JosephCars"
+        width="170"
+        height="70"
+      />
+    </a>
+    <div class="btn-group">
+      <ng-container>
+        <button class="btn btn-sm border-0 shadow-none" id="smallScreenSignIn">
+          <span class="bi bi-person fs-1"></span>
+        </button>
+      </ng-container>
+      <ng-container> </ng-container>
+      <button
+        class="navbar-toggler border-0 shadow-none float-end"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        (click)="toggleMenu()"
+      >
+        <span
+          class="bi fs-1"
+          [ngClass]="{ 'bi-list': !menuToggle(), 'bi-x-lg': menuToggle() }"
+        ></span>
+      </button>
+    </div>
+
+    <div
+      class="collapse navbar-collapse justify-content-center"
+      id="navbarNavAltMarkup"
+    >
+      <div class="navbar-nav text-uppercase fw-semibold">
+        <a class="nav-link mx-3 active" aria-current="page" routerLink="/"
+          >Home</a
+        >
+        <a class="nav-link mx-3" routerLink="/about">About</a>
+        <a class="nav-link mx-3" routerLink="/bookings">Bookings</a>
+        <a class="nav-link mx-3" routerLink="/contact">Contact</a>
+      </div>
+    </div>
+    <button class="btn btn-sm border-0 mx-3" id="largeScreenSignIn">
+      <span class="bi bi-person fs-1"></span>
+    </button>
+  </div>
+  <br />
+  <br />
+  <br />
+</nav>

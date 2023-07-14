@@ -1,0 +1,100 @@
+#jumbotron {
+  height: 80vh !important;
+}
+#jumbotron::before {
+  content: "";
+  background-image: url("https://preview.colorlib.com/theme/autoroad/images/bg_1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.96;
+}
+#jumbotron h1 span {
+  color: #fc8947;
+}
+.white {
+  color: #ffffff;
+}
+.indigoWhite {
+  color: #ecf4f5;
+}
+.orangeBellPepper {
+  color: #fc8947;
+}
+.zodiacConstellation {
+  color: #f18546;
+}
+.bgZodiac {
+  background-color: #f18546;
+}
+.bgCoral {
+  background-color: #fcb48a;
+}
+.coralDusk {
+  color: #fcb48a;
+}
+.aquaNation {
+  color: #0c747c;
+}
+.waterhenBlack {
+  color: #2f4354;
+}
+.chuffBlue {
+  color: #94c4c3;
+}
+.caulerpa {
+  color: #579b9c;
+}
+section div .col-sm-6 #aboutImg {
+  background-image: url("C:\Users\hp\Desktop\carRentalApp\src\assets\images\vacation.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media screen and (max-width: 767.98px) {
+  .img-2 {
+    height: 600px;
+  }
+}
+.img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+@media screen and (min-width: 768px) {
+  #aboutRow {
+    margin: 0px 120px 0px 120px;
+  }
+}
+div #bgAbout {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+#jumbotronAd {
+  position: relative;
+}
+
+#jumbotronAd::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://4.bp.blogspot.com/-D9laU85bADE/T2CJ-btp6aI/AAAAAAAAMeo/SJLNWhZzGlg/s1600/RR+Phantom,+Lambo+Diablo+6.0+and+a+super+rare+white+Ferrari+F430+Scuderia+at+the+Montage+Hotel..jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.85;
+}
+
+.container-fluid.py-3 {
+  position: relative;
+  z-index: 1;
+}

@@ -1,0 +1,64 @@
+<footer class="container-fluid white g-0 mt-5">
+  <div class="row">
+    <div class="col-sm white" *ngFor="let footItem of footerItem">
+      <span class="text-uppercase" style="font-size: 14px">{{
+        footItem.head
+      }}</span>
+      <br />
+      <br />
+      <ul class="list-unstyled white">
+        <li>{{ footItem.item1 }}</li>
+        <li>{{ footItem.item2 }}</li>
+        <li>{{ footItem.item3 }}</li>
+        <li>{{ footItem.item4 }}</li>
+        <li>{{ footItem.item5 }}</li>
+      </ul>
+    </div>
+  </div>
+  <br />
+  <div class="text-center">
+    <a class="navbar-brand" routerLink="/">
+      <img
+        src="assets/images/whiteBrandLogoo.png"
+        alt="JosephCars"
+        width="170"
+        height="70"
+      />
+    </a>
+    <br />
+    <br />
+    <span class="text-center">
+      <!-- <span class="fa fa-map-marker fs-5"></span> -->
+      <span class="word-wrap"
+        >No.3 Adeogun Street, Off Benbo Road, Apata, Ibadan. </span
+      ><br />
+      <!-- <span class="fa fa-phone fs-5"></span> -->
+      <a href="tel://09036831386"> +(234) 9036831386</a>,
+      <a href="tel://08022010991"> +(234) 8022010991</a> <br />
+      <!-- <span class="bi bi-envelope-fill fs-5"></span> -->
+      <a href="mailto:josepheniola28@gmail.com">reservations@josephcars.com</a>
+    </span>
+    <ul class="list-unstyled d-flex justify-content-center">
+      <li class="ps-3">
+        <a href=""><span class="bi bi-instagram fs-3 rentcolor"></span></a>
+      </li>
+      <li class="ps-3">
+        <a href=""><span class="bi bi-twitter fs-3 rentcolor"></span></a>
+      </li>
+      <li class="ps-3">
+        <a href=""><span class="bi bi-instagram fs-3 rentcolor"></span></a>
+      </li>
+      <li class="ps-3">
+        <a href=""><span class="bi bi-linkedin fs-3 rentcolor"></span></a>
+      </li>
+    </ul>
+  </div>
+  <hr />
+  <span class="" style="font-size: 0.75rem"
+    >Joseph, Inc. is not responsible for content on external Web sites.
+    <br />
+    © 2023 Joseph, Inc., a car rental company. All rights reserved. Joseph and
+    the Logo are trademarks or registered trademarks of Joseph, Inc. JB#
+    2809-005.</span
+  >
+</footer>
