@@ -1,0 +1,102 @@
+.bgAquaNation {
+  background-color: #0c747c;
+}
+.bgOrangeBell {
+  background-color: #fc8947;
+}
+.bgZodiac {
+  background-color: #f18546;
+}
+.bgAnotherWhite {
+  background-color: #f3f5f9;
+}
+.newWhite {
+  color: rgba(255, 255, 255, 0.8);
+}
+.white {
+  color: #ffffff;
+}
+.indigoWhite {
+  color: #ecf4f5;
+}
+.orangeBellPepper {
+  color: #fc8947;
+}
+.zodiacConstellation {
+  color: #f18546;
+}
+.bgZodiac {
+  background-color: #f18546;
+}
+.bgCoral {
+  background-color: #fcb48a;
+}
+.coralDusk {
+  color: #fcb48a;
+}
+.aquaNation {
+  color: #0c747c;
+}
+.waterhenBlack {
+  color: #2f4354;
+}
+.chuffBlue {
+  color: #94c4c3;
+}
+.caulerpa {
+  color: #579b9c;
+}
+#aboutCover {
+  height: 77vh;
+}
+#aboutCover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background-image: url(https://preview.colorlib.com/theme/autoroad/images/bg_2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#aboutCover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+  color: rgba(255, 255, 255, 0.8);
+}
+section div .col-sm-6 #aboutImg {
+  background-image: url("C:\Users\hp\Desktop\carRentalApp\src\assets\images\vacation.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media screen and (max-width: 767.98px) {
+  .img-2 {
+    height: 600px;
+  }
+}
+.img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+@media screen and (min-width: 768px) {
+  #aboutRow {
+    margin: 0px 120px 0px 120px;
+  }
+}
+div #bgAbout {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
